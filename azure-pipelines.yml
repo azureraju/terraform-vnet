@@ -24,9 +24,8 @@ stages:
             inputs:
               provider: 'azurerm'
               command: 'init'
-              workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-vnet'
+              workingDirectory: '$(System.DefaultWorkingDirectory)terraform-vnet'
               backendServiceArm: 'Pay-As-You-Go(e58b54d7-2056-4c1d-88fd-c6b1bb1a406d)'
-              backendAzureRmOverrideSubscriptionID: 'e58b54d7-2056-4c1d-88fd-c6b1bb1a406d'
               backendAzureRmResourceGroupName: 'rgp-strg-stmanagemnt'
               backendAzureRmStorageAccountName: 'stargstmanagment'
               backendAzureRmContainerName: 'contarnerst'
